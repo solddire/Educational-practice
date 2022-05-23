@@ -116,6 +116,7 @@ namespace WpfApp1
 
         public static void Login_Database(string Login,string Password) 
         {
+            Page1 window = new Page1();
             string Connect = "Database=" + "mydb" + ";Datasource=" + "localhost" + ";User=" + "root" + ";Password=" + "new_password";
             try
             {
@@ -129,7 +130,7 @@ namespace WpfApp1
                 {
                     if (Login == mysql_result.GetString(1) && Password == mysql_result.GetString(4))
                     {
-                        MessageBox.Show("Пользователь существует!");
+                        window.Show();
                     }
                     if (Login != mysql_result.GetString(1) || Password != mysql_result.GetString(4)) 
                     {

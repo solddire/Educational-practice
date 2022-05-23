@@ -33,6 +33,7 @@ namespace WpfApp1
         private void LoginButton_Click(object sender, RoutedEventArgs e) 
         {
             App.Login_Database(LoginBox.Text, PasswordField.Password);
+            Close();
         }
     }
 }
