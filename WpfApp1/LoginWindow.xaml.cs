@@ -34,6 +34,8 @@ namespace WpfApp1
         {
             App.Login_Database(LoginBox.Text, PasswordField.Password);
             Close();
+            MainWindow mainwin = new MainWindow();
+            mainwin.Show();
         }
     }
 }

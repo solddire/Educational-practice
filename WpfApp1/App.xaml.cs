@@ -116,7 +116,7 @@ namespace WpfApp1
 
         public static void Login_Database(string Login,string Password) 
         {
-            Page1 window = new Page1();
+            MainWindow window = new MainWindow();
             string Connect = "Database=" + "mydb" + ";Datasource=" + "localhost" + ";User=" + "root" + ";Password=" + "new_password";
             try
             {
